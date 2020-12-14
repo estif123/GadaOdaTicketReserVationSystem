@@ -320,7 +320,7 @@
 
                     <div class="info-box-content">
                       <span class="info-box-text">drivers</span>
-                      <span class="info-box-number">760</span>
+                      <span class="info-box-number">'.$driver.'</span>
                       <span><a href="driver.php"> show more </a></span>
                     </div>
                     <!-- /.info-box-content -->
@@ -335,7 +335,7 @@
                     <div class="info-box-content">
                       <span class="info-box-text">Total Customers</span>
                       <span class="info-box-number">'.$total_customer.'</span>
-                      <span><a href="customer.php"> show more </a></span>
+                      <span><a href="account/account.php"> show more </a></span>
                     </div>
                     <!-- /.info-box-content -->
                   </div>

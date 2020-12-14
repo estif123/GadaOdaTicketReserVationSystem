@@ -170,13 +170,25 @@
               <form  method="POST" action="addaccountreg.php" role="form" id="validationForm">
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="fullname">Full Name</label>
-                    <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter First Name">
-                  </div>  
+                    <label for="first_name">Frist Name</label>
+                    <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Enter First Name">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" class="form-control" id="lasst_name" name="last_name" placeholder="Enter Last Name">
+                  </div>
+
                   <div class="form-group">
                     <label for="email">Email</label>
                     <input type="text" class="form-control" name="email" id="email" placeholder="Enter Email">
                   </div>
+
+                  <div class="form-group">
+                    <label for="phone_number">Phone Number</label>
+                    <input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Enter Number">
+                  </div>
+
                   <div class="form-group">
                     <label for="username">username</label>
                     <input type="text" class="form-control" name="username" id="username" placeholder="Enter username">
@@ -186,18 +198,23 @@
                     <input type="password" class="form-control" name="password" id="Password" placeholder="Enter Password">
                   </div>
                   <div class="form-group">
-                    <label for="username">phone Number</label>
-                    <input type="number" class="form-control" id="phonenumber"name="phonenumber" placeholder="Enter phone number">
+                    <label for="confirm_assword">Confirm Password</label>
+                    <input type="password" class="form-control" name="confirm_password" id="confirm_assword" placeholder="Confirm Password">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputFile">Photo</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" name="photo" id="photo">
-                        <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                      </div>   
-                    </div>
+                    <label for="age">Age</label>
+                    <input type="text" class="form-control" name="age" id="age" placeholder="age">
                   </div>
+                  <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <input type="text" class="form-control" name="gender" id="gender" placeholder="Please enter gender">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="gender">Address</label>
+                    <input type="text" class="form-control" name="address" id="address" placeholder="Please enter Address">
+                  </div>
+
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="form-group">
@@ -209,7 +226,7 @@
                         </select>
                       </div>
                     </div>
-                      </div>
+                   </div>
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>

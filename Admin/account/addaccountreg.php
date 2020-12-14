@@ -1,15 +1,19 @@
 <?php
 include('../../database.php');
-$fullname=$_POST['fullname'];
+$first_name=$_POST['first_name'];
+$last_name=$_POST['last_name'];
 $email=$_POST['email'];
-$uname=$_POST['username'];
-$pass=md5($_POST['password']);
-$phone=$_POST['phonenumber'];
+$phone_number=$_POST['phone_number'];
+$username=$_POST['username'];
+$password=md5($_POST['password']);
+$confirm_password=md5($_POST['confirm_password']);
 //$photo=$_POST['photo'];
 $type=$_POST['type'];
-
-$sql = "INSERT INTO account (fullname,email,username,password,phonenumber,type)
-VALUES ('$fullname','$email','$uname','$pass','$phone','$type')";
+$age=$_POST['age'];
+$gender=$_POST['gender'];
+$address=$_POST['adress'];
+$sql = "INSERT INTO account (first_name,last_name,email,phone_number,username,password , confirm_password,type,age,gender,address)
+VALUES ('$first_name','$last_name','$email','$phone_number','$username','$password','$confirm_password','$type','$age','$gender','$address')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";

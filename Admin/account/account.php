@@ -231,10 +231,10 @@
                              echo ('<div class="row">');
                                 echo('<div class="col-7">
                                    <h2 class="lead"><b></b></h2>
-                                   <p class="text-muted text-sm"><b>Full name: </b> '.$row["fullname"].' </p>
+                                   <p class="text-muted text-sm"><b>Full name: </b> '.$row["username"].' </p>
                                    <ul class="ml-4 mb-0 fa-ul text-muted">
                                      <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Email: '.$row["email"].'</li>
-                                     <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone #: '.$row["phonenumber"].'</li>
+                                     <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone #: '.$row["phone_number"].'</li>
                                    </ul>
                                  </div>');
                                  echo('<div class="col-5 text-center">
@@ -244,12 +244,15 @@
                              echo('</div>');
                              echo('<div class="card-footer">');
                                echo('<div class="text-right">
-                                 <a href="#" class="btn btn-sm bg-teal">
-                                   <i class="fas fa-comments"></i>
+                               <a href="profile.php" class="btn btn-sm btn-primary"  >
+                               <i class="fas fa-user"></i> View Profile
+                             </a>
+                               <a href="#" class="btn btn-sm bg-teal">
+                                   <i class="fas fa-edit"></i>Update
                                  </a>
-                                 <a href="profile.php" class="btn btn-sm btn-primary"  >
-                                   <i class="fas fa-user"></i> View Profile
-                                 </a>
+                                 <a href="profile.php" class="btn btn-sm btn-warning"  >
+                                 <i class="fas fa-trash-alt"></i> Delete
+                               </a>
                                </div>');
                              echo('</div>');
                            echo('</div>');
